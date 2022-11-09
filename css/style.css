@@ -83,6 +83,7 @@
     padding: 1.5em;
 }
 
+
 /* Header */
 
 .header-row{
@@ -301,6 +302,10 @@
     font-size: 2.5em;
 }
 
+.padding-lt-about{
+    padding: 1.5em 3em 1.5em 0em;
+}
+
 /* Started */
 
 .font-size-25em{
@@ -344,6 +349,5 @@
 }
 
 .footer-col{
-    padding:2em;
     background-color: rgb(49, 49, 49);
 }
