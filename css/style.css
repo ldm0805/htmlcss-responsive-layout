@@ -11,6 +11,10 @@
     font-size: 1.5em;
 }
 
+.link-reset{
+    text-decoration: none;
+    color: white;
+}
 
 .white{
     color: white;
@@ -267,13 +271,32 @@
 /* Started */
 
 .started-row{
+    background-color: rgb(106, 29, 179);
     align-items: center;
 }
 
 .started-col{
+    padding: 2em 1.5em 2em 1.5em;
     width: 100%;
-    height: 30em;
-    background-color: rgb(106, 29, 179);
+    background-color: #9792E4;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.button-white{
+    background-color: white;
+    color: #9792E4;
+    border-radius: 3em;
+    padding: 0.8em 4em 0.8em 4em;
+    font-size: 1em;
+}
+
+.text-thin{
+    font-weight: lighter;
+}
+
+.text-yellow{
+    color: yellow;
 }
 
 /* Footer */
@@ -283,7 +306,7 @@
 }
 
 .footer-col{
+    padding:2em 5em 2em 5em;
     width: 100%;
-    height: 30em;
-    background-color: rgb(54, 49, 58);
+    background-color: rgb(49, 49, 49);
 }
