@@ -6,6 +6,16 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+.title-white{
+    color: white;
+    font-size: 1.5em;
+}
+
+
+.white{
+    color: white;
+}
+
 .flex{
     display: flex;
 }
@@ -17,6 +27,10 @@
 
 .flex-center{
     align-items: center;
+}
+
+.text-align-center{
+    text-align: center;
 }
 
 .button-reset{
@@ -35,6 +49,15 @@
 .fontsize-15em{
     font-size: 1.5em;
 }
+
+.margin-top-1em{
+    margin-top: 1.5em;
+}
+
+.padding-1em{
+    padding: 0em 1.5em 0em 1.5em;
+}
+
 /* Header */
 
 .header-row{
@@ -98,18 +121,34 @@
 .demo-app-icon{
     font-size: 6em;
 }
+
 /* Strategic planning */
 
 .planning-row{
+    background-color: #9792E4;
     margin: 2em 0em 4em 0em;
+    padding-bottom: 4em;
     align-items: center;
 }
 
 .planning-col{
     width: 95%;
-    height: 30em;
-    background-color: rgb(87, 231, 82);
     border-radius: 2em;
+}
+
+.planning-white{
+    background-color: white;
+    border-radius: 2em;
+}
+
+.img-planning{
+    width: 100%;
+}
+
+.button-circle{
+    background-color: purple;
+    border-radius: 50%;
+    padding: 0.3em 0.5em 0.3em 0.5em;
 }
 
 /* Testimonials */
@@ -121,10 +160,39 @@
 
 .testimonials-col{
     width: 80%;
-    height: 30em;
-    background-color: rgb(231, 82, 186);
+    background-color: #9792E4;
     border-radius: 2em;
+    margin-bottom: 2em;
+    padding: 1.5em 1em 1.5em 1em;
 }
+
+.color-violet{
+    color:#9792E4;
+
+}
+
+.testimonial-img{
+    height: 11em;
+    width: 11em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.test-img-1{
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.test-img-2{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.test-img-3{
+    background-image: url(../img/testimonial3.jpg);
+}
+
+
 
 /* Benefits */
 
