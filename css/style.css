@@ -20,13 +20,17 @@
     color: white;
 }
 
-.flex{
+.row-flex-column{
     display: flex;
+    flex-direction: column;
 }
 
-.flex-column{
-    flex-direction: column;
-    gap: 1.5em;
+.gap-2em{
+    gap: 2em;
+}
+
+.line-height-2em{
+    line-height: 2em;
 }
 
 .flex-center{
@@ -45,9 +49,10 @@
 }
 
 .button-blue{
-    background-color: rgb(2, 0, 145);
+    background-color: #0084FD;
     color: white;
     border-radius: 3em;
+    padding: 0.5em 3em 0.5em 3em;
 }
 
 .fontsize-15em{
@@ -62,17 +67,33 @@
     padding: 0em 1.5em 0em 1.5em;
 }
 
+.padding-bottom-15em{
+    padding-bottom: 1.5em;
+}
+
+.padding-top{
+    padding-top: 1.5em;
+}
+
+.padding-updown-15em{
+    padding: 1.5em 0em 1.5em 0em;
+}
+
+.padding-15em{
+    padding: 1.5em;
+}
+
 /* Header */
 
 .header-row{
-    background-color: rgb(21, 70, 70);
-    width: 100%;
+    background-color: #0084FD;
+    width: 100vw;
     justify-content: space-between;
+    padding: 1.5em 0em 1.5em 0em;
 }
 
 .header-col{
-    background-color: black;
-    width: 30%;
+    width: 20%;
 }
 
 .logo-flex{
@@ -83,16 +104,16 @@
 /* Inizio demo app */
 
 .demo-app-row{
-    margin: 2em 0em 4em 0em;
+    margin: 4em 3em 4em 3em;
     align-items: center;
 }
 
 .demo-app-col, .demo-app-col-phone{
-    width: 75%;
+    width: 100%;
     background-color: #B5DDFF;
     border-radius: 2em;
-    padding: 0em 2em 0em 2em;
     justify-content: space-between;
+    align-items: center;
 }
 
 .demo-app-col{
@@ -100,18 +121,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 25em;
+    min-height: 25em;
+    padding: 2em 4em 2em 4em;
 }
 
 .demo-app-col-phone{
-    height: 35em;
+    padding: 2em 4em 0em 4em;
+}
+
+.demo-title{
+    color:#0084FD;
 }
 
 .img-phone{
-    width: 90%;
-    height: 60%;
-    background-image: url(../img/phone.png);
-    background-size: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }
 
 .color-demo{
@@ -136,11 +161,13 @@
 }
 
 .planning-col{
-    width: 95%;
     border-radius: 2em;
+    padding: 2em 3em 0em 3em;
 }
 
 .planning-white{
+    margin: 2em 3em 0em 3em;
+    padding-bottom: 2em;
     background-color: white;
     border-radius: 2em;
 }
@@ -163,11 +190,13 @@
 }
 
 .testimonials-col{
-    width: 80%;
+    min-height: 28em;
+    margin: 2em 4em 0em 4em;
+    padding: 2em 2em 0em 2em;
     background-color: #9792E4;
     border-radius: 2em;
     margin-bottom: 2em;
-    padding: 1.5em 1em 1.5em 1em;
+    line-height: 2em;
 }
 
 .color-violet{
@@ -216,17 +245,18 @@
 }
 
 .benefits-title-col{
-    width: 80%;
+    margin: 1em 2em 1em 2em;
     border-radius: 2em;
 }
 
 .benefits-col{
-    width: 80%;
+    margin: 1em 3em 0em 3em;
     background-color: rgb(184, 144, 36);
     border-radius: 2em;
     align-items: baseline;
     padding: 1.5em;
     background-color: white;
+    line-height: 1.5em;
 }
 
 
@@ -247,12 +277,13 @@
 }
 
 .about-text-col{
-    width: 80%;
+    margin: 0em 3em 0em 3em;
     border-radius: 2em;
+    line-height: 1.5em;
 }
 
 .about-col{
-    width: 90%;
+    margin: 0em 3em 0em 3em;
     border-radius: 2em;
 }
 
@@ -260,6 +291,7 @@
 .about-img{
     position: relative;
     background-image: url(../img/about.jpg);
+    margin-bottom: 1em;
 }
 
 .quotes{
@@ -268,7 +300,12 @@
     right: 0;
     font-size: 2.5em;
 }
+
 /* Started */
+
+.font-size-25em{
+    font-size: 2.5em;
+}
 
 .started-row{
     background-color: rgb(106, 29, 179);
@@ -276,11 +313,12 @@
 }
 
 .started-col{
-    padding: 2em 1.5em 2em 1.5em;
-    width: 100%;
+    min-height: 25em;
+    padding: 2em 3.5em 2em 3.5em;
     background-color: #9792E4;
     flex-direction: column;
     gap: 1em;
+    
 }
 
 .button-white{
@@ -306,7 +344,6 @@
 }
 
 .footer-col{
-    padding:2em 5em 2em 5em;
-    width: 100%;
+    padding:2em;
     background-color: rgb(49, 49, 49);
 }
