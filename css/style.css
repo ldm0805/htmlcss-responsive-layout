@@ -3,39 +3,190 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .flex{
     display: flex;
 }
 
+.flex-column{
+    flex-direction: column;
+    gap: 2em;
+}
+
+.flex-center{
+    align-items: center;
+}
+
+.button-reset{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    margin: 5px 0px;
+}
+
+.button-blue{
+    background-color: rgb(2, 0, 145);
+    color: white;
+    border-radius: 3em;
+}
+
+.fontsize-15em{
+    font-size: 1.5em;
+}
 /* Header */
 
 .header-row{
     background-color: rgb(21, 70, 70);
     width: 100%;
-    height: 4em;
     justify-content: space-between;
 }
 
 .header-col{
     background-color: black;
-    height: 100%;
     width: 30%;
+}
+
+.logo-flex{
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* Inizio demo app */
 
 .demo-app-row{
-    margin-top: 2em;
+    margin: 2em 0em 4em 0em;
     align-items: center;
-    flex-direction: column;
-    gap: 2em;
+}
+
+.demo-app-col, .demo-app-col-phone{
+    width: 75%;
+    background-color: #B5DDFF;
+    border-radius: 2em;
+    padding: 0em 2em 0em 2em;
+    justify-content: space-between;
 }
 
 .demo-app-col{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     height: 25em;
-    background-color: rgb(82, 82, 231);
+}
+
+.demo-app-col-phone{
+    height: 35em;
+}
+
+.img-phone{
+    width: 90%;
+    height: 60%;
+    background-image: url(../img/phone.png);
+    background-size: cover;
+}
+
+.color-demo{
+    color: #0084FD;
+}
+
+.p-demo{
+    color: gray;
+}
+
+.demo-app-icon{
+    font-size: 6em;
+}
+/* Strategic planning */
+
+.planning-row{
+    margin: 2em 0em 4em 0em;
+    align-items: center;
+}
+
+.planning-col{
+    width: 95%;
+    height: 30em;
+    background-color: rgb(87, 231, 82);
     border-radius: 2em;
+}
+
+/* Testimonials */
+
+.testimonials-row{
+    align-items: center;
+    margin: 2em 0em 4em 0em;
+}
+
+.testimonials-col{
+    width: 80%;
+    height: 30em;
+    background-color: rgb(231, 82, 186);
+    border-radius: 2em;
+}
+
+/* Benefits */
+
+.benefits-row{
+    align-items: center;
+}
+
+.benefits-title-col{
+    width: 80%;
+    height: 3em;
+    background-color: rgb(184, 144, 36);
+    border-radius: 2em;
+}
+
+.benefits-col{
+    width: 80%;
+    height: 30em;
+    background-color: rgb(184, 144, 36);
+    border-radius: 2em;
+}
+
+/* About us */
+
+.about-row{
+    align-items: center;
+    margin: 2em 0em 4em 0em;
+}
+
+.about-text-col{
+    width: 100%;
+    height: 40em;
+    background-color: rgb(82, 231, 149);
+    border-radius: 2em;
+}
+
+.about-col{
+    width: 100%;
+    height: 30em;
+    background-color: rgb(82, 231, 149);
+    border-radius: 2em;
+}
+
+/* Started */
+
+.started-row{
+    align-items: center;
+}
+
+.started-col{
+    width: 100%;
+    height: 30em;
+    background-color: rgb(106, 29, 179);
+}
+
+/* Footer */
+
+.footer-row{
+    align-items: center;
+}
+
+.footer-col{
+    width: 100%;
+    height: 30em;
+    background-color: rgb(54, 49, 58);
 }

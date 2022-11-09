@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Esercizio: htmlcss-responsive-layout</title>
     </head>
         <body>
@@ -12,8 +16,8 @@
             <header>
                 <div class="header-container flex">
                     <div class="header-row flex">
-                        <div class="header-col">
-                            
+                        <div class="header-col flex logo-flex">
+                            <img src="./img/logo.png" alt="logo">
                         </div>
                         <div class="header-col">
 
@@ -28,21 +32,32 @@
 
                 <section class="demo-app">
                     <div class="demo-app-container">
-                        <div class="demo-app-row flex">
-                            <div class="demo-app-col">
-
+                        <div class="demo-app-row flex flex-column padding-updown-2em">
+                            <div class="demo-app-col-phone flex flex-column">
+                                <h3>Get a demo application</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores culpa ab commodi distinctio, repudiandae officiis odit tenetur! Iure quos modi, voluptates eos hic officia obcaecati quam nisi eaque saepe aut?</p>
+                                <button class="button-reset button-blue fontsize-15em"><i class="fa-brands fa-apple"></i> App store</button>
+                                <div class="img-phone flex-center"></div>
                             </div>
                             <div class="demo-app-col">
-
+                                <i class="fa-solid fa-file-code demo-app-icon color-demo"></i>
+                                <h3 class="color-demo">Clean code</h3>
+                                <p class="p-demo"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nulla possimus et ad architecto? Debitis ut hic quis nam in voluptatem veritatis quibusdam voluptas incidunt exercitationem, eos inventore non nostrum?</strong></p>
                             </div>
                             <div class="demo-app-col">
-
+                                <i class="fa-solid fa-compass-drafting demo-app-icon color-demo"></i>
+                                <h3 class="color-demo">Web design</h3>
+                                <p class="p-demo"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nulla possimus et ad architecto? Debitis ut hic quis nam in voluptatem veritatis quibusdam voluptas incidunt exercitationem, eos inventore non nostrum?</strong></p>
                             </div>
                             <div class="demo-app-col">
-
+                                <i class="fa-solid fa-laptop-code demo-app-icon color-demo"></i>
+                                <h3 class="color-demo">Developement</h3>
+                                <p class="p-demo"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nulla possimus et ad architecto? Debitis ut hic quis nam in voluptatem veritatis quibusdam voluptas incidunt exercitationem, eos inventore non nostrum?</strong></p>
                             </div>
                             <div class="demo-app-col">
-
+                                <i class="fa-solid fa-bullhorn demo-app-icon color-demo"></i>
+                                <h3 class="color-demo">Branding</h3>
+                                <p class="p-demo"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nulla possimus et ad architecto? Debitis ut hic quis nam in voluptatem veritatis quibusdam voluptas incidunt exercitationem, eos inventore non nostrum?</strong></p>
                             </div>
 
                         </div>
@@ -51,15 +66,113 @@
 
                 <!-- Strategic planning -->
 
+                <section class="planning">
+                    <div class="planning-container">
+                        <div class="planning-row flex flex-column padding-updown-2em">
+                            <div class="planning-col">
+
+                            </div>
+                            <div class="planning-col">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Testimonials -->
+
+                <section class="testimonials">
+                    <div class="testimonials-container">
+                        <div class="testimonials-row flex flex-column padding-updown-2em">
+
+                            <div class="testimonials-col">
+
+                            </div>
+                            <div class="testimonials-col">
+
+                            </div>
+                            <div class="testimonials-col">
+
+                            </div>
+                            <div class="testimonials-col">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <!-- Benefits -->
 
+                <section class="benefits">
+                    <div class="benefits-container">
+                        <div class="benefits-row flex flex-column padding-updown-2em">
+
+                            <div class="benefits-title-col">
+
+                            </div>
+                            <div class="benefits-col">
+
+                            </div>
+                            <div class="benefits-col">
+
+                            </div>
+                            <div class="benefits-col">
+
+                            </div>
+                            <div class="benefits-col">
+
+                            </div>
+                            <div class="benefits-col">
+
+                            </div>
+                            <div class="benefits-col">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- About us -->
+
+                <section class="about">
+                    <div class="about-container">
+                        <div class="about-row flex flex-column padding-updown-2em">
+
+                            <div class="about-text-col">
+
+                            </div>
+                            <div class="about-col">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <!-- Started -->
 
-                <!-- Footer -->
+                <section class="started">
+                    <div class="started-container">
+                        <div class="started-row flex flex-column padding-updown-2em">
+
+                            <div class="started-col">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
+
+            <!-- Footer -->
+            <footer>
+                    <div class="footer-container">
+                        <div class="footer-row flex flex-column padding-updown-2em">
+                            
+                            <div class="footer-col">
+                                
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+
         </body>
 </html>
