@@ -90,6 +90,7 @@
 .container-phone{
     max-width: 450px;
 }
+
 /* Immagini tonde */
 
 .testimonial-img, .about-img, .object-fit{
@@ -144,7 +145,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: calc(100% / 2);
     padding: 2em 4em 2em 4em;
 }
 
@@ -443,10 +443,12 @@
     }
 }
 
+/* Desktop */
 
-/* 
-    #benefits .benefits-col{
-        width: calc(100% / 3 - 3em);
-        margin: 1.5em;
-        padding: 1em;
-    } */
+    @media screen and (min-width: 992px){
+
+       #resp-tab .demo-app-row, .planning-col{
+        width: 70%;
+        margin: 0 auto;
+       }
+    }
