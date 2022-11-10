@@ -87,6 +87,9 @@
     padding: 1.5em;
 }
 
+.container-phone{
+    max-width: 450px;
+}
 /* Immagini tonde */
 
 .testimonial-img, .about-img, .object-fit{
@@ -122,11 +125,18 @@
 }
 
 .demo-app-col, .demo-app-col-phone{
+    max-height: 100%;
     width: 100%;
     background-color: #B5DDFF;
     border-radius: 2em;
     justify-content: space-between;
     align-items: center;
+    margin: 1em;
+}
+
+.demo-app-col-phone{
+
+    padding: 2em 4em 0em 4em;
 }
 
 .demo-app-col{
@@ -134,16 +144,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 25em;
+    height: calc(100% / 2);
     padding: 2em 4em 2em 4em;
 }
 
-.demo-app-col-phone{
-    padding: 2em 4em 0em 4em;
-}
 
 .demo-title{
     color:#0084FD;
+}
+
+.phone-container{
+    
+    max-width: 12em;
 }
 
 .img-phone{
@@ -339,4 +351,39 @@
 
 .footer-col{
     background-color: rgb(49, 49, 49);
+}
+
+/* Responsive */
+
+/* Tablet */
+
+@media screen and (min-width: 768px){
+    
+    #resp-tab .demo-app-container{
+        min-width: 700px;
+    }
+
+    #resp-tab .demo-app-row{
+        height: calc(100% /2);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    #resp-tab .demo-app-col-phone{
+        height: 100%;
+        width: calc(100% / 3 * 2 - 4em);
+        display: flex;
+        align-items: flex-start;
+    }
+    #resp-tab .demo-app-col{
+        height: 100%;
+        width: calc(100% / 3 - 2em);
+    }
+
+
+    /* benefits */
+
+
 }
