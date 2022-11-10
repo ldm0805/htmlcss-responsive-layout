@@ -20,6 +20,10 @@
     color: white;
 }
 
+.flex{
+    display: flex;
+}
+
 .row-flex-column{
     display: flex;
     flex-direction: column;
@@ -83,12 +87,20 @@
     padding: 1.5em;
 }
 
+/* Immagini tonde */
+
+.testimonial-img, .about-img, .object-fit{
+    height: 10em;
+    width: 10em;
+    border-radius: 100%;
+    object-fit: cover;
+}
 
 /* Header */
 
 .header-row{
     background-color: #0084FD;
-    width: 100vw;
+    max-width: 100%;
     justify-content: space-between;
     padding: 1.5em 0em 1.5em 0em;
 }
@@ -204,28 +216,6 @@
     color:#9792E4;
 }
 
-.testimonial-img, .about-img{
-    height: 11em;
-    width: 11em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 100%;
-}
-
-.test-img-1{
-    background-image: url(../img/testimonial1.jpg);
-}
-
-.test-img-2{
-    background-image: url(../img/testimonial2.jpg);
-}
-
-.test-img-3{
-    background-image: url(../img/testimonial3.jpg);
-}
-
-
 
 /* Benefits */
 
@@ -291,14 +281,13 @@
 
 .about-img{
     position: relative;
-    background-image: url(../img/about.jpg);
     margin-bottom: 1em;
 }
 
 .quotes{
     position: absolute;
     top: 0;
-    right: 0;
+    left: 3em;
     font-size: 2.5em;
 }
 
