@@ -125,7 +125,7 @@
 }
 
 .demo-app-col, .demo-app-col-phone{
-    max-height: 100%;
+  
     width: 100%;
     background-color: #B5DDFF;
     border-radius: 2em;
@@ -313,13 +313,18 @@
     font-size: 2.5em;
 }
 
+.started-container{
+    width: 100%;
+}
+
 .started-row{
+    width: 100%;
     background-color: rgb(106, 29, 179);
     align-items: center;
 }
 
 .started-col{
-    min-height: 25em;
+    width: 100%;
     padding: 2em 3.5em 2em 3.5em;
     background-color: #9792E4;
     flex-direction: column;
@@ -364,26 +369,84 @@
     }
 
     #resp-tab .demo-app-row{
-        height: calc(100% /2);
+        min-height: calc(100% / 2);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        
+        align-items: stretch;
     }
 
     #resp-tab .demo-app-col-phone{
-        height: 100%;
-        width: calc(100% / 3 * 2 - 4em);
-        display: flex;
+        width: calc(100% / 3 * 2 - 2em);
+        flex-direction: column;
         align-items: flex-start;
     }
     #resp-tab .demo-app-col{
-        height: 100%;
+        
         width: calc(100% / 3 - 2em);
     }
 
 
     /* benefits */
 
+    #benefits .benefits-row-two{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    
+    #benefits .benefits-col{
+        width: calc(100% / 2 - 3em);
+        margin: 1.5em;
+        padding: 1em;
+    }
+    /* about us */
 
+
+    #about .about-container{
+        
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    
+    #about .about-text-col{
+        min-height: 100%;
+    }
+
+    #about h3{
+        padding: 0;
+    }
+    
+    #about .button-violet{
+        margin-top: 1em;
+        padding: 2em 5em 2em 5em;
+    }
+    
+    #about .row-flex-column{
+        flex-direction: row;
+    }
+
+    /* started */
+
+    #started .started-col{
+        padding: 2 20em;
+    }
+    
+    /* footer */
+
+    #footer .footer-col{
+        padding: 0 10em;
+    }
 }
+
+
+/* 
+    #benefits .benefits-col{
+        width: calc(100% / 3 - 3em);
+        margin: 1.5em;
+        padding: 1em;
+    } */
